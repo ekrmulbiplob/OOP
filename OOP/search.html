@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title> HOME PAGE</title>
+</head>
+<style>
+label{
+	font-size: 20px;
+	font-famil: Arial;
+	color:white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.committee{
+	width: 500px;
+	height: 250px;
+	margin-top: 50px;
+	margin-left: 320px;
+	background: rgba(15,15,88,0.7);
+	border-radius: 15px;
+	text-align: center;
+}
+input[type=submit]{
+	padding: 12px;
+	height:58px;
+	width: 100px;
+	border-collapse: collaspe;
+	font-size: 18px;
+	font-famil: Arial;
+	border: 1px solid #3c3c3c;
+	border-radius:5px; 0 0 5px;
+	background:orange;
+	color:#fff;
+	margin-left: -16px;
+	margin-top:100px;
+
+	
+}
+input[type="date"]{
+    padding: 12px;
+	width: 300px;
+	height:30px;
+	border-collapse: collaspe;
+	font-size: 18px;
+	font-famil: Arial;
+	border: 1px solid #3c3c3c;
+	border-radius:5px; 0 0 5px;
+	margin-top:100px;
+}
+
+</style>
+<body>
+	
+	<div class = "container">
+		<ul>
+			<li><a href="home.php">Home</a></li>
+			<li><a>Faculty</a>
+				<ul>
+					<li><a>Add Faculty</a></li>
+					<li><a>Show Faculty</a></li>
+					<li><a>Delete Faculty</a></li>
+				</ul>
+				</li>
+			<li><a>Application</a>
+				<ul>
+					<li><a>Add Account</a></li>
+					<li><a>View Profile</a></li>
+					<li><a>Delete Account</a></li>
+				</ul>
+				</li>
+			<li><a>Committee</a>
+				<ul>
+					<li><a>Add Committee</a></li>
+					<li><a>Search Committee</a></li>
+					<li><a>Delete Committee</a></li>
+				</ul>
+				</li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a>About Us</a></li>
+		</ul>
+		<marquee>Welcome to Daffodil International School</marquee>
+	</div>
+
+		<div class = "committee">
+			<form action ="show_committee.php" method ="get">
+			<input type = "date" name = "search1">
+			<input type = "submit" name = "search" value = "Search">
+			</form>
+		</div>
+		
+</body>
+</html>	
